@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(express.static('website'));
 
-app.get("/all", async (req, res) => {
+app.get('/all', async (req, res) => {
     if (projectData) {
         res.send(projectData);
     }
